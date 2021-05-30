@@ -1,4 +1,3 @@
-from django.dispatch.dispatcher import receiver
 from django.shortcuts import render,HttpResponse
 from django.core.signals import request_finished
 from django.dispatch import receiver,Signal
