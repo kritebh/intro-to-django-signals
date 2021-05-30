@@ -11,4 +11,4 @@ class Post(models.Model):
 def save_post(sender,instance,**kwargs):
     print("Pre save")
 
-post_save.connect(save_post,sender=Post) # This will trigger after the saving data into Post model
+pre_save.connect(save_post,sender=Post) # This will trigger after the saving data into Post model
